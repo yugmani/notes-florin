@@ -55,13 +55,13 @@ body {
 }
 
 .note .main {
-  height: 400px;
-  width: 100%;
+  /* max-height: 100%;
+  width: 100%; */
   overflow: hidden;
 }
 
 .note textarea {
-  height: 400px;
+  max-height: 100%;
   width: 100%;
   border: none;
   font-family: inherit;
