@@ -9,7 +9,7 @@ const notes = JSON.parse(localStorage.getItem("notes"));
 
 if (notes) {
   notes.forEach((note) => {
-    addNewNotes(note);
+    addNewNote(note);
   });
 }
 
@@ -24,8 +24,10 @@ function addNewNote(text = "") {
         <button class="delete"><i class="fas fa-trash-alt"></i></button>
       </div>
       <div class="note-area">
-         <textarea></textarea>
-         <div class="main hidden"></div>
+         <div class="main ${text ? "" : "hidden"}"></div>
+         <textarea name="" id="" rows="12" class="${
+           text ? "hidden" : ""
+         }"></textarea>
       </div>
     </div>
   `;

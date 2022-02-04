@@ -11,6 +11,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .add-note {
@@ -19,7 +20,7 @@ body {
   border: none;
   border-radius: 3px;
   padding: 0.5rem 1rem;
-  margin: 2rem auto;
+
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -30,7 +31,6 @@ body {
   height: 400px;
   background-color: #fff;
   margin: 20px;
-
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -54,22 +54,24 @@ body {
   /* line-height: 1.2rem; */
 }
 
-.note .main {
-  /* max-height: 100%;
-  width: 100%; */
+.note-area .main {
+  height: auto;
+  width: 100%;
   overflow: hidden;
 }
 
-.note textarea {
-  max-height: 100%;
+.note-area textarea {
+  height: auto;
   width: 100%;
   border: none;
   font-family: inherit;
   font-size: 1.5rem;
   outline: none;
+  background-color: whitesmoke;
+  color: black;
 }
 
-.notes .hidden {
+.note-area .hidden {
   display: none;
 }
 
